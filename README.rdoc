@@ -7,6 +7,11 @@ It will use EXIF timestamp if its there or else take file creation timestamp.
 
     bash> ruby photo_org.rb /path/to/source /path/to/destination dirs
 
+== Installation
+
+* Get the source.
+* Install exifr (gem install exifr) if you don't have them already.
+
 == Notes
 
 * If there are two or more files with the same timestamp they will be copied as: file_name.jpg, file_name-1.jpg, file-name-2.jpg...etc
