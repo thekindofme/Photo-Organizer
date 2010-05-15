@@ -13,7 +13,7 @@ class PhotoOrg
   def run argv
     log = Phlogger.new argv[0], argv[1]
 
-    DirWalker.new(argv[0], argv[2], log).walk_the_source_dir do |path|
+    DirWalker.new(argv[0], log).walk_the_source_dir do |path|
       Phile.new(path, argv[1], log).copy
     end
 
