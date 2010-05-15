@@ -9,6 +9,9 @@ It will use EXIF timestamp if its there or else take file creation timestamp.
 
 == Notes
 
+* If there are two or more files with the same timestamp they will be copied as: file_name.jpg, file_name-1.jpg, file-name-2.jpg...etc
+* Duplicates will be copied to /path/to/dest/Duplicates
+* Non jpeg files will be copied to /path/to/dest/Other
 * The script creates a log file in the destination directory at the end of execution.
 * You can edit more settings like folder names, folder structure, file name...etc by editing the constants inside the script
 * Any feedback will be highly appreciated.
